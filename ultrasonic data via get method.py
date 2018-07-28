@@ -40,3 +40,10 @@ def ultra():
         print "d:",d,"cm"
         sleep(0.5)
         return str(d)
+
+while True:
+
+            
+         value = ultra()
+         requests.get("http://class.aarmontech.com/3/?temprature=" + value)
+         print value
